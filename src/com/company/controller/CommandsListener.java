@@ -9,13 +9,11 @@ public interface CommandsListener extends BaseCommands  {
     void userInput();
 
     @Override
-    default void chat() {
-
+    default void chat(String message) {
+        System.out.println("Your simple message : "+message);
     }
 
-    void move(DIRECTION direction);
 
-   List<DIRECTION> getAvailableDirections();
 
 
 
